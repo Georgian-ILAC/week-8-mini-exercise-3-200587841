@@ -1,9 +1,9 @@
 public class Person {
-    private  String firstName;
-    private  String lastName;
-    private double height;
+    protected String firstName;
+    protected String lastName;
+    protected double height;
 
-    public Person(String firstName, String lastName) {
+    public Person() {
         this.firstName = firstName;
         this.lastName = lastName;
     }
@@ -16,20 +16,19 @@ public class Person {
         return lastName;
     }
 
-    private double getHeight(){
+    private double getHeight() {
         return height;
     }
 
-    public void setFirstName(String firstName){
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
-    public void setLastName(String lastName){
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    private void setHeight(double height){
-        this.height=height;
+    private void setHeight(double height) {
+        this.height = height;
     }
-
 }
